@@ -25,6 +25,7 @@ Comments
 --------
 
 First level comments should always be followed by an empty line. Except for the first one on the page, first level comments should be preceded by six empty lines.
+Three empty lines before second level comments and one empty line after.
 
     /* Comment level 1
        -------------------------------------------------- */
