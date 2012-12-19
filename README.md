@@ -12,8 +12,8 @@ General
 - Properties should be indented four spaces.
 - Soft tabs that span four spaces must be used.
 - Put a space after the colon before values.
-- Try to not be overly specific.
+- Do not be overly specific.
 
-        .selector{
+        .selector {
             property: value;
         }
