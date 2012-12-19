@@ -17,3 +17,54 @@ General
         .selector {
             property: value;
         }
+
+
+
+
+Comments
+--------
+
+First level comments should always be followed by an empty line. Except for the first one on the page, first level comments should be preceded by six empty lines.
+
+    /* Comment level 1
+       -------------------------------------------------- */
+    
+    .selector {
+        property: value;
+    }
+    
+    
+    
+    
+    
+    
+    /* Here's another level 1 comment
+       -------------------------------------------------- */
+    
+    /* Have you seen level 2 comments?
+       ---------------------------------------- */
+    
+    .selector {
+        property: value;
+    }
+    
+    
+    
+    /* And...comment level 3
+       ------------------------------ */
+       
+    .selector {
+        property: value;
+    }
+    .selector {
+        property: value;
+    }
+    
+    
+    /* But wait! There's more. Comment level 4 */
+    .selector {
+        property: value;
+    }
+    .selector {
+        property: value; /* A wild inline comment appeared! */
+    }
