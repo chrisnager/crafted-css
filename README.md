@@ -12,6 +12,8 @@ General
 - Properties should be indented four spaces.
 - Soft tabs that span four spaces must be used.
 - Put a space after the colon before values.
+- Always use a zero before a decimal number. (e.g. opacity: 0.8;)
+- Always end declarations with a semicolon.
 - Do not be overly specific.
 
         .selector {
