@@ -26,6 +26,7 @@ Formatting
 
 - Write one declaration per line.
 - Always use a leading zero before a decimal number. (e.g. `opacity: 0.8;`)
+- Never attach a unit to a zero value. (e.g. `padding: 1em 0 0` instead of `padding: 1em 0em 0px`)
 - Always end declarations with a semicolon.
 - Make class/ID names human readable, but as short as possible. (e.g. `.nav` and `.btn` are fine, but use `.gallery` instead of `.glry`)
 - Use dashes, not underscores or camel case with class/ID names. (e.g. `.btn-large`, not `.btn_large` or `.btnLarge`)
@@ -159,6 +160,15 @@ Comments
     .selector {
         property: value; /* A wild inline comment appeared! */
     }
+
+
+
+Order
+-----
+
+.btn {
+    width: 0;
+}
 
 
 
