@@ -17,7 +17,7 @@ General
 - Don't use IDs in CSS if at all possible.
 - Do not be overly specific.
 
----
+
 
     .selector {
         property: value;
