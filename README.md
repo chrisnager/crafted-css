@@ -33,11 +33,12 @@ Formatting
 
 
 
-Indenting and whitespace
-------------------------
+Whitespace
+----------
 
 - Properties should be indented four spaces.
 - Use soft tabs that span four spaces.
+- When indenting, do not mix tabs and spaces. Only use spaces.
 - Always put a space between a selector and its opening curly brace.
 - Put a space after the colon between your property and value.
 - Never leave trailing white space. (I use a plugin that deletes trailing white space on each save.)
