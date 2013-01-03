@@ -14,6 +14,7 @@ General
 - Put a space after the colon before values.
 - Always use a zero before a decimal number. (e.g. opacity: 0.8;)
 - Always end declarations with a semicolon.
+- Don't use IDs in CSS if at all possible.
 - Do not be overly specific.
 
         .selector {
