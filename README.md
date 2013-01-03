@@ -26,7 +26,7 @@ Formatting
 
 - Write one declaration per line.
 - Always use a leading zero before a decimal number. (e.g. `opacity: 0.8;`)
-- Never attach a unit to a zero value. (e.g. `padding: 1em 0 0` instead of `padding: 1em 0em 0px`)
+- Don't attach a unit to a zero value if it's not needed. (e.g. Use `padding: 1em 0 0` instead of `padding: 1em 0em 0px`. However, it is neccesarry to leave `%` on some zero values like `color: hsla(130, 0%, 50%, 0.2);`.)
 - Always end declarations with a semicolon.
 - Make class/ID names human readable, but as short as possible. (e.g. `.nav` and `.btn` are fine, but use `.gallery` instead of `.glry`)
 - Use dashes, not underscores or camel case with class/ID names. (e.g. `.btn-large`, not `.btn_large` or `.btnLarge`)
