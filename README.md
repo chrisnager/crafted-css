@@ -172,6 +172,8 @@ Order
 4. State
 5. Theme
 
+---
+
     .btn {
         width: auto;
         height: auto;
