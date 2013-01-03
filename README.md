@@ -110,6 +110,7 @@ Set `line-height` with a unitless number. (e.g. `line-height: 1.4;`)
 Comments
 --------
 
+- Comment often.
 - First level comments should always be followed by an empty line.
 - Except for the first one on the page, first level comments should be preceded by six empty lines.
 - Three empty lines before second level comments and one empty line after.
@@ -178,7 +179,7 @@ BEM
 
 This is the only time underscores are cool to use.
 
-`block__element--modifier {}`
+`.block__element--modifier {}`
 
 
 
@@ -189,5 +190,5 @@ I encourage splitting your SCSS/Less/Stylus files into a maintainable folder str
 
 Like this:
 
-
+project-name.scss
 vars.scss
