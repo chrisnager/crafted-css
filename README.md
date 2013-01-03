@@ -20,6 +20,14 @@ Formatting
 - Always end declarations with a semicolon.
 - Make class/ID names human readable, but as short as possible. (e.g. `.nav` and `.btn` are fine, but use `.gallery` instead of `.glry`)
 - Use dashes, not underscores or camel case with class/ID names. (e.g. `.btn-large`)
+- Don't use quotation marks around `url`s.
+- Keep the `url` relative by not including `http:` or `https:`.
+
+---
+
+.example {
+  background: url(//www.google.com/images/example);
+}
 
 
 
