@@ -172,49 +172,47 @@ Order
 4. State
 5. Theme
 
-.btn {
-    width: auto;
-    height: auto;
-    min-width: 0;
-    max-width: none;
-    min-height: 0;
-    max-height: none;
-    
-    margin: 0 auto;
-    border: 0;
-    border-radius: 0.15em;
-    padding: 0.5em 1em;
+    .btn {
+        width: auto;
+        height: auto;
+        min-width: 0;
+        max-width: none;
+        min-height: 0;
+        max-height: none;
 
-    position: relative;
-    top: 0;
-    right: auto;
-    bottom: auto;
-    left: 0;
-    
-    display: inline-block;
-    float: none;
-    
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-style: italic;
-    
-    line-height: 1.5;
-    letter-spacing: -0.1em;
+        margin: 0 auto;
+        border: 0;
+        border-radius: 0.15em;
+        padding: 0.5em 1em;
 
-    text-align: center;
-    text-decoration: underline;
+        position: relative;
+        top: 0;
+        right: auto;
+        bottom: auto;
+        left: 0;
 
-    color: white;
+        display: inline-block;
+        float: none;
 
-    background-color: red;
-    background-image: url(btn-bg.png);
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: contain;
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-style: italic;
 
-    
-}
+        line-height: 1.5;
+        letter-spacing: -0.1em;
+
+        text-align: center;
+        text-decoration: underline;
+
+        color: white;
+
+        background-color: red;
+        background-image: url(btn-bg.png);
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 
 
 
