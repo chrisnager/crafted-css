@@ -23,6 +23,20 @@ General
 
 
 
+Vendor prefixes
+---------------
+
+- Do not indent vendor prefixed declarations.
+- Always use the non-prefixed property last.
+
+    .btn {
+        -webkit-transition: background-color 0.4s ease-in-out;
+        -moz-transition: background-color 0.4s ease-in-out;
+        -o-transition: background-color 0.4s ease-in-out;
+        transition: background-color 0.4s ease-in-out;
+    }
+
+
 Comments
 --------
 
