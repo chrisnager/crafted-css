@@ -145,3 +145,20 @@ Comments
     .selector {
         property: value; /* A wild inline comment appeared! */
     }
+
+
+
+Exceptions
+----------
+
+- Note the spacing.
+
+.grid-10 { width: 10%; }
+.grid-20 { width: 20%; }
+.grid-30 { width: 30%; }
+.grid-40 { width: 40%; }
+
+
+
+BEM
+---
