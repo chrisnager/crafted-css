@@ -1,7 +1,7 @@
 Crafted CSS
 ===========
 
-My personal CSS styleguide
+This is a compilation of my personal CSS practices I follow. Inspiration was drawn from Nicholas Gallagher's Idomatic CSS, Jonathan Snook's SMACSS, Harry Robert's HTML/CSS Coding Style, Yandex's BEM, Github's CSS Style Guide, and Google's HTML/CSS Style Guide.
 
 > All code in any code-base should look like a single person typed it, no matter how many people contributed. – _@necolas from idomatic.css_
 
@@ -162,5 +162,7 @@ Exceptions
 
 BEM
 ---
+
+This is the only time underscores are cool to use.
 
 `block__element--modifier {}`
