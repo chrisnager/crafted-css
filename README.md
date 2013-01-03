@@ -29,7 +29,6 @@ Formatting
 - Always end declarations with a semicolon.
 - Make class/ID names human readable, but as short as possible. (e.g. `.nav` and `.btn` are fine, but use `.gallery` instead of `.glry`)
 - Use dashes, not underscores or camel case with class/ID names. (e.g. `.btn-large`, not `.btn_large` or `.btnLarge`)
-- Color names (`red`) and shorthand hexcodes (`#eee`) are preffered. Regular hexcodes, `hsla`, and `rgba` may be used for additional color control.
 - Use double quotes. (`font-family: "Lucida Sans", sans-serif`)
 - Your closing brace should line up vertically with the first character in the ruleset.
 - Don't use quotation marks around `url`s.
@@ -64,6 +63,14 @@ Whitespace
     .btn {
         background-color: hsl(4, 100%, 43%);
     }
+
+
+
+Colors
+------
+
+- Color names (`red`) and shorthand hexcodes (`#eee`) are preffered. Regular hexcodes, `hsla`, and `rgba` may be used for additional color control.
+- Use lowercase only when dealing with colors. (e.g. `cadetblue`, `#dabb1e`, `#b2b`)
 
 
 
@@ -172,3 +179,15 @@ BEM
 This is the only time underscores are cool to use.
 
 `block__element--modifier {}`
+
+
+
+Preprocessors
+-------------
+
+I encourage splitting your SCSS/Less/Stylus files into a maintainable folder structure with chunks of related styles.
+
+Like this:
+
+
+vars.scss
