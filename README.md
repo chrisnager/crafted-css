@@ -5,6 +5,8 @@ This is a personal compilation of CSS practices I follow.
 
 Inspiration was drawn from Nicholas Gallagher's Idomatic CSS, Jonathan Snook's SMACSS, Harry Robert's HTML/CSS Coding Style, Yandex's BEM, Github's CSS Style Guide, and Google's HTML/CSS Style Guide.
 
+---
+
 > All code in any code-base should look like a single person typed it, no matter how many people contributed.
 
 – _Nicholas Gallagher, from Idomatic CSS_
