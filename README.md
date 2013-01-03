@@ -24,6 +24,7 @@ Formatting
 - Make class/ID names human readable, but as short as possible. (e.g. `.nav` and `.btn` are fine, but use `.gallery` instead of `.glry`)
 - Use dashes, not underscores or camel case with class/ID names. (e.g. `.btn-large`, not `.btn_large` or `.btnLarge`)
 - Color names (`red`) and shorthand hexcodes (`#eee`) are preffered. Regular hexcodes, `hsla`, and `rgba` may be used for additional color control.
+- Use double quotes. (`font-family: "Lucida Sans", sans-serif`)
 - Don't use quotation marks around `url`s.
 - Keep `url`s relative by not including `http:` or `https:`.
 
