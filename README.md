@@ -19,9 +19,9 @@ General
 
 
 
-    .selector {
+`    .selector {
         property: value;
-    }
+    }`
 
 
 
