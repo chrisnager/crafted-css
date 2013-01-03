@@ -43,14 +43,16 @@ Vendor prefixes
 Font-size / line-height
 -----------------------
 
-Set base <code>font-size</code> in pixels and additional <code>font-size</code>s in <code>rem</code>s/<code>em</code>s.
-Set <code>line-height</code> with a unitless number. (e.g. line-height: 1.4;)
+Set base `font-size` in pixels and additional `font-size`s in `rem`s/`em`s.
+Set `line-height` with a unitless number. (e.g. `line-height: 1.4;`)
 
     html {
         font: 16px/1.6 sans-serif;
     }
     h1 {
-        font-size: 2.5em;
+        font-size: 40px; /* Fallback */
+
+        font-size: 2.5rem;
         /* h1 is now 40px/64px */
     }
 
