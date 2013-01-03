@@ -3,6 +3,9 @@ Crafted CSS
 
 My personal CSS styleguide
 
+"All code in any code-base should look like a single person typed it, no matter how many people contributed."
+- @necolas from idomatic.css
+
 
 
 General
@@ -31,8 +34,8 @@ Formatting
 
 
 
-Indenting and white-space
--------------------------
+Indenting and whitespace
+------------------------
 
 - Properties should be indented four spaces.
 - Use soft tabs that span four spaces.
