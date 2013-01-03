@@ -8,20 +8,39 @@ My personal CSS styleguide
 General
 -------
 
-- Always put a space between a selector and its opening curly brace.
-- Properties should be indented four spaces.
-- Soft tabs that span four spaces must be used.
-- Put a space after the colon before values.
-- Always use a zero before a decimal number. (e.g. opacity: 0.8;)
-- Always end declarations with a semicolon.
-- Don't use IDs in CSS if at all possible.
+- Don't use IDs in CSS if at all possible. Stick to classes.
 - Do not be overly specific.
 
 
 
-`    .selector {
+Formatting
+----------
+
+- Always use a zero before a decimal number. (e.g. `opacity: 0.8;`)
+- Always end declarations with a semicolon.
+
+
+
+Indenting and white-space
+-------------------------
+
+- Properties should be indented four spaces.
+- Use soft tabs that span four spaces.
+- Always put a space between a selector and its opening curly brace.
+- Put a space after the colon between your property and value.
+- Never leave trailing white space. (I use a plugin that deletes trailing white space on each save.)
+- Use spaces between values like hsla/rgba color values to improve readability. /* 1 */
+
+***
+
+    .selector {
         property: value;
-    }`
+    }
+    
+    /* 1 */
+    .btn {
+        background-color: hsl(4, 100%, 43%);
+    }
 
 
 
