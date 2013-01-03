@@ -16,7 +16,7 @@ General
 Formatting
 ----------
 
-- Always use a zero before a decimal number. (e.g. `opacity: 0.8;`)
+- Always use a leading zero before a decimal number. (e.g. `opacity: 0.8;`)
 - Always end declarations with a semicolon.
 
 
