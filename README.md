@@ -98,6 +98,8 @@ Comments
 - Three empty lines before second level comments and one empty line after.
 - Use sentence case when writing comments.
 
+---
+
     /* Comment level 1
        -------------------------------------------------- */
     
