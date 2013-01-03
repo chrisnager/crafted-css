@@ -31,7 +31,7 @@ Indenting and white-space
 - Never leave trailing white space. (I use a plugin that deletes trailing white space on each save.)
 - Use spaces between values like hsla/rgba color values to improve readability. /* 1 */
 
-***
+---
 
     .selector {
         property: value;
