@@ -7,7 +7,6 @@ Inspiration was drawn from Nicholas Gallagher's Idomatic CSS, Jonathan Snook's S
 
 > All code in any code-base should look like a single person typed it, no matter how many people contributed.
 > 
-> 
 > – _Nicholas Gallagher_
 
 
