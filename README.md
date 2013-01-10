@@ -268,9 +268,26 @@ Exceptions
 OOCSS and BEM
 -------------
 
-This is the only time underscores are cool to use.
+- This is the only time underscores are cool to use.
+- 
+
+<br>
+
+OOCSS example:
+
+`.btn--
+
+
+How BEM works:
 
 `.block__element--modifier {}`
+
+
+
+JavaScript
+----------
+
+- Classes added by JS should be prefixed with "is" to denote the JS state that was added to the element. (e.g. `.is-active`)
 
 
 
