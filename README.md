@@ -36,7 +36,7 @@ General
 - Avoid over-qualified selectors when possible. (e.g. Use `.btn` instead of `a.btn`)
 - Make your code is future-proof and easily editable for the next developer that will be working on it.
 - A note on shorthand, be explicit. If an element only needs `padding-bottom: 0;`, do not use the shorthand property `padding: 0`. It may come back to bite you later on because you'll need to overwrite CSS that shouldn't have been there in the first place.
-- When debuggingyour CSS, remove code rather than add more.
+- When debugging your CSS, remove code rather than add more.
 
 
 
@@ -131,7 +131,7 @@ Comments
 - Three empty lines before second level comments and one empty line after.
 - Use sentence case when writing comments.
 
----
+<br>
 
     /* Comment level 1
        -------------------------------------------------- */
@@ -174,6 +174,27 @@ Comments
     .selector {
         property: value; /* A wild inline comment appeared! */
     }
+    
+    
+    
+    /* Level 2 comment
+       ---------------------------------------- */
+    
+    .selector {
+        property: value;
+    }
+
+
+
+
+
+
+    /* Another level 1 comment
+       -------------------------------------------------- */
+    
+    .selector {
+        property: value;
+    }
 
 
 
@@ -186,7 +207,7 @@ Order
 4. State
 5. Theme
 
----
+<br>
 
     .btn {
         width: auto;
