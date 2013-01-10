@@ -22,6 +22,7 @@ Contents
 - [Comments](#comments)
 - [Order](#order)
 - [Exceptions](#exceptions)
+- [Responsive Design](#responsive-design)
 - [OOCSS and BEM](#oocss-and-bem)
 - [JavaScript](#javascript)
 - [Preprocessors](#preprocessors)
@@ -35,7 +36,7 @@ General
 - Do not be overly specific. (e.g. `.my-list > li` rather than `body .content .wrapper .my-list li`)
 - Instead of targetting an element like this: `body .header .box a.btn`, `.btn` is much better.
 - Avoid over-qualified selectors when possible. (e.g. Use `.btn` instead of `a.btn`)
-- Make your code is future-proof and easily editable for the next developer that will be working on it.
+- Make your code as future-proof and easily editable for the next developer that will be working on it.
 - A note on shorthand, be explicit. If an element only needs `padding-bottom: 0;`, do not use the shorthand property `padding: 0`. It may come back to bite you later on because you'll need to overwrite CSS that shouldn't have been there in the first place.
 - When debugging your CSS, remove code rather than add more.
 
@@ -263,6 +264,15 @@ Exceptions
         .grid-20 { width: 20%; }
         .grid-30 { width: 30%; }
         .grid-40 { width: 40%; }
+
+
+
+Responsive Design
+-----------------
+
+- Write your media queries straight into your code and not all at the end of your CSS document.
+- Build in a flexible way where you do not need to set widths.
+- Craft your layouts with `rem`s, `em`s, and percentage-based units for fluidity.
 
 
 
