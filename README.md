@@ -172,7 +172,7 @@ Comments
         property: value;
     }
     .selector {
-        property: value; /* A wild inline comment appeared! */
+        property: value;
     }
     
     
@@ -193,7 +193,7 @@ Comments
        -------------------------------------------------- */
     
     .selector {
-        property: value;
+        property: value; /* A wild inline comment appeared! */
     }
 
 
