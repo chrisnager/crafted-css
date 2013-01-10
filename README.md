@@ -283,7 +283,7 @@ OOCSS example:
 
 How BEM should be written:
 
-`.block__element--modifier {}`
+    .block__element--modifier {}
 
 
 
@@ -303,4 +303,5 @@ Like this:
 
 project-name.scss
 vars.scss
-...
+
+More on this to come...
