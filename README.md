@@ -15,6 +15,8 @@ Contents
 
 - [General](#general)
 - [Formatting](#formatting)
+- [Numbers](#numbers)
+- [URLs](#urls)
 - [Whitespace](#whitespace)
 - [Colors](#colors)
 - [Vendor prefixes](#vendor-prefixes)
@@ -37,7 +39,7 @@ General
 - Instead of targetting an element like this: `body .header .box a.btn`, `.btn` is much better.
 - Avoid over-qualified selectors when possible. (e.g. Use `.btn` instead of `a.btn`)
 - Make your code as future-proof and easily editable for the next developer that will be working on it.
-- A note on shorthand, be explicit. If an element only needs `padding-bottom: 0;`, do not use the shorthand property `padding: 0`. It may come back to bite you later on because you'll need to overwrite CSS that shouldn't have been there in the first place.
+- A note on shorthand, be explicit. If an element only needs `padding-bottom: 0;`, do not use the shorthand property `padding: 0`. It may come back to bite you later on when you need to overwrite CSS that shouldn't have been there in the first place.
 - When debugging your CSS, remove code rather than add more.
 
 
@@ -46,13 +48,25 @@ Formatting
 ----------
 
 - Write one declaration per line.
-- Always use a leading zero before a decimal number. (e.g. `opacity: 0.8;`)
-- Don't attach a unit to a zero value if it's not needed. (e.g. Use `padding: 1em 0 0` instead of `padding: 1em 0em 0px`. However, it is neccesarry to leave `%` on some zero values like `color: hsla(130, 0%, 50%, 0.2);`.)
 - Always end declarations with a semicolon.
 - Make class/ID names human readable, but as short as possible. (e.g. `.nav` and `.btn` are fine, but use `.gallery` instead of `.glry`)
 - Use lowercase with dashes, not underscores or camelcase for class/ID names. (e.g. `.btn-large`, not `.btn_large` or `.btnLarge`)
 - Use double quotes. (`font-family: "Lucida Sans", sans-serif`)
 - Your closing brace should line up vertically with the first character in the ruleset.
+
+
+
+Numbers
+-----
+
+- Always use a leading zero before a decimal number. (e.g. `opacity: 0.8;`)
+- Don't attach a unit to a zero value if it's not needed. (e.g. Use `padding: 1em 0 0` instead of `padding: 1em 0em 0px`. However, it is neccesarry to leave `%` on some zero values like `color: hsla(130, 0%, 50%, 0.2);`.)
+
+
+
+URLs
+----
+
 - Don't use quotation marks around `url`s.
 - Keep `url`s relative by not including `http:` or `https:`.
 
@@ -85,7 +99,7 @@ Example showing the proper use of whitespace:
 Colors
 ------
 
-- Color names (`red`) and shorthand hexcodes (`#eee`) are preffered. Regular hexcodes, `hsla`, and `rgba` may be used for additional color control.
+- Color names (`red`) and shorthand hexcodes (`#eee`) are preffered. Regular hexcodes, `hsla`, and `rgba` should be used for additional color control.
 - Use lowercase only when dealing with colors. (e.g. `cadetblue`, `#dabb1e`, `#b2b`)
 
 
@@ -109,17 +123,18 @@ Vendor prefixes
 Font-size / line-height
 -----------------------
 
-Set base `font-size` in pixels and additional `font-size`s in `rem`s/`em`s.
-Set `line-height` with a unitless number. (e.g. `line-height: 1.4;`)
+Set base `font-size` in pixels and additional `font-size`s in `rem`s or `em`s.
+Always set `line-height` with a unitless number. (e.g. `line-height: 1.4;`)
 
     html {
         font: 16px/1.6 sans-serif;
     }
     h1 {
-        font-size: 40px; /* Fallback */
+        /* Fallback */
+        font-size: 40px;
 
+        /* This makes h1 40px/64px */
         font-size: 2.5rem;
-        /* h1 is now 40px/64px */
     }
 
 
