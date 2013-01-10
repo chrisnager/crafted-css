@@ -48,8 +48,8 @@ Formatting
 - Your closing brace should line up vertically with the first character in the ruleset.
 - Don't use quotation marks around `url`s.
 - Keep `url`s relative by not including `http:` or `https:`.
-<br>
 
+<br>
     .example {
         background-image: url(//chrisnager.com/images/image.png);
     }
