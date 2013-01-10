@@ -325,7 +325,7 @@ I encourage splitting your SCSS/Less/Stylus files into a maintainable folder str
 
 Like this:
 
-project-name.scss
-vars.scss
+`project-name.scss`
+`vars.scss`
 
 More on this to come...
