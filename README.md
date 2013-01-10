@@ -203,13 +203,27 @@ Comments
 Order
 -----
 
-1. Base
-2. Layout
-3. Module
-4. State
-5. Theme
+You should follow this five-group model for crafting your CSS.
 
-<br>
+1. Base - includes your elements without classes
+    html {}
+    a {}
+    a:hover {}
+
+2. Layout - includes elements that make up the structure of the page
+    .l-module {}
+    .l-content {}
+
+3. Module - includes typical elements that contain the content
+    .nav
+    
+4. State - define your JS state classes here
+    .is-active
+
+5. Theme - includes variations of module elements
+    .btn--dark
+
+General declaration order:
 
     .btn {
         width: auto;
