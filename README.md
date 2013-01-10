@@ -66,19 +66,13 @@ Whitespace
 - Always put a space between a selector and its opening curly brace.
 - Put a space after the colon between your property and value.
 - Never leave trailing white space. (I use a plugin that deletes trailing white space on each save.)
-- Use spaces between values like hsla/rgba color values to improve readability. /* 1 */
+- Use spaces between subvalues in values like hsla/rgba color values to improve readability. (e.g. hsl(4, 100%, 43%))
 
----
+Example showing the proper use of whitespace:
 
     .selector {
         property: value;
     }
-    
-    /* 1 */
-    .btn {
-        background-color: hsl(4, 100%, 43%);
-    }
-
 
 
 Colors
