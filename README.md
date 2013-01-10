@@ -4,7 +4,6 @@ Crafted CSS
 This is a personal compilation of CSS practices I follow.
 
 Inspiration was drawn from Nicholas Gallagher's Idomatic CSS, Jonathan Snook's SMACSS, Harry Robert's HTML/CSS Coding Style, Yandex's BEM, Github's CSS Style Guide, Google's HTML/CSS Style Guide and my own experience with CSS over the years.
-
 <br>
 
 > All code in any code-base should look like a single person typed it, no matter how many people contributed.
