@@ -206,22 +206,27 @@ Order
 You should follow this five-group model for crafting your CSS.
 
 1. Base - includes your elements without classes
+
     html {}
     a {}
     a:hover {}
 
 2. Layout - includes elements that make up the structure of the page
+    
     .l-module {}
     .l-content {}
 
 3. Module - includes typical elements that contain the content
-    .nav
+    
+    .nav {}
     
 4. State - define your JS state classes here
-    .is-active
+    
+    .is-active {}
 
 5. Theme - includes variations of module elements
-    .btn--dark
+    
+    .btn--dark {}
 
 General declaration order:
 
