@@ -31,7 +31,9 @@ General
 -------
 
 - Don't use IDs in CSS if at all possible. Stick to classes.
-- Do not be overly specific.
+- Do not be overly specific. (e.g. `.my-list > li` rather than `body .content .wrapper .my-list li`)
+- Be explicit. Instead of targetting an element like this: `body .header .box a.btn`, `.btn` is much better.
+- Make your code is future-proof and easily editable for the next developer that will be working on it.
 
 
 
@@ -43,7 +45,7 @@ Formatting
 - Don't attach a unit to a zero value if it's not needed. (e.g. Use `padding: 1em 0 0` instead of `padding: 1em 0em 0px`. However, it is neccesarry to leave `%` on some zero values like `color: hsla(130, 0%, 50%, 0.2);`.)
 - Always end declarations with a semicolon.
 - Make class/ID names human readable, but as short as possible. (e.g. `.nav` and `.btn` are fine, but use `.gallery` instead of `.glry`)
-- Use dashes, not underscores or camel case with class/ID names. (e.g. `.btn-large`, not `.btn_large` or `.btnLarge`)
+- Use lowercase with dashes, not underscores or camelcase for class/ID names. (e.g. `.btn-large`, not `.btn_large` or `.btnLarge`)
 - Use double quotes. (`font-family: "Lucida Sans", sans-serif`)
 - Your closing brace should line up vertically with the first character in the ruleset.
 - Don't use quotation marks around `url`s.
@@ -66,7 +68,7 @@ Whitespace
 - Always put a space between a selector and its opening curly brace.
 - Put a space after the colon between your property and value.
 - Never leave trailing white space. (I use a plugin that deletes trailing white space on each save.)
-- Use spaces between subvalues in values like hsla/rgba color values to improve readability. (e.g. hsl(4, 100%, 43%))
+- Use spaces between subvalues in values like hsla/rgba color values to improve readability. (e.g. `hsl(4, 100%, 43%)`)
 
 Example showing the proper use of whitespace:
 
