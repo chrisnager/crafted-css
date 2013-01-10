@@ -33,6 +33,7 @@ General
 - Don't use IDs in CSS if at all possible. Stick to classes.
 - Do not be overly specific. (e.g. `.my-list > li` rather than `body .content .wrapper .my-list li`)
 - Be explicit. Instead of targetting an element like this: `body .header .box a.btn`, `.btn` is much better.
+- Avoid over-qualified selectors when possible. (e.g. Use `.btn` instead of `a.btn`)
 - Make your code is future-proof and easily editable for the next developer that will be working on it.
 
 
@@ -259,3 +260,4 @@ Like this:
 
 project-name.scss
 vars.scss
+...
