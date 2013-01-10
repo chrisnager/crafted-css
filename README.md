@@ -79,6 +79,7 @@ Vendor prefixes
 ---------------
 
 - Do not indent vendor prefixed declarations.
+- Order them from longest prefix name to shortest.
 - Always use the non-prefixed property last.
 
         .btn {
