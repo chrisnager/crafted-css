@@ -36,7 +36,7 @@ General
 
 - Don't use IDs in CSS if at all possible. Stick to classes.
 - Do not be overly specific. (e.g. `.my-list > li` rather than `body .content .wrapper .my-list li`)
-- Instead of targetting an element like this: `body .header .box a.btn`, `.btn` is much better.
+- Instead of targetting an element based on it's parents like this: `body .header .box a.btn`, `.btn` is much better.
 - Avoid over-qualified selectors when possible. (e.g. Use `.btn` instead of `a.btn`)
 - Make your code as future-proof and easily editable for the next developer that will be working on it.
 - A note on shorthand, be explicit. If an element only needs `padding-bottom: 0;`, do not use the shorthand property `padding: 0`. It may come back to bite you later on when you need to overwrite CSS that shouldn't have been there in the first place.
@@ -67,7 +67,7 @@ Numbers
 URLs
 ----
 
-- Don't use quotation marks around `url`s.
+- Don't use quotes around `url`s.
 - Keep `url`s relative by not including `http:` or `https:`.
 
 Relative url example:
@@ -91,8 +91,8 @@ Whitespace
 
 Example showing the proper use of whitespace:
 
-    .selector {
-        property: value;
+    .btn {
+        background-image: linear-gradient(to bottom, #0cf, rgba(255, 255, 255, 0.5));
     }
 
 
@@ -100,7 +100,7 @@ Colors
 ------
 
 - Color names (`red`) and shorthand hexcodes (`#eee`) are preffered. Regular hexcodes, `hsla`, and `rgba` should be used for additional color control.
-- Use lowercase only when dealing with colors. (e.g. `cadetblue`, `#dabb1e`, `#b2b`)
+- Only use lowercase when dealing with colors. (e.g. `cadetblue`, `#dabb1e`, `#b2b`)
 
 
 
@@ -123,18 +123,17 @@ Vendor prefixes
 Font-size / line-height
 -----------------------
 
-Set base `font-size` in pixels and additional `font-size`s in `rem`s or `em`s.
-Always set `line-height` with a unitless number. (e.g. `line-height: 1.4;`)
-
+-You can set your base `font-size` in pixels but all additional `font-size`s should be set with `rem`s or `em`s.
+-Always set your `line-height` with a unitless number. (e.g. `line-height: 1.4;`)
+ 
+ <br>
+ 
     html {
         font: 16px/1.6 sans-serif;
     }
     h1 {
-        /* Fallback */
-        font-size: 40px;
-
-        /* This makes h1 40px/64px */
-        font-size: 2.5rem;
+        font-size: 40px; /* Fallback */
+        font-size: 2.5rem; /* This makes your h1 40px/64px. */
     }
 
 
@@ -142,13 +141,13 @@ Always set `line-height` with a unitless number. (e.g. `line-height: 1.4;`)
 Comments
 --------
 
-- Comment often.
+- Comment often for future developers (and for future you).
 - First level comments should always be followed by an empty line.
 - Except for the first one on the page, first level comments should be preceded by six empty lines.
-- Three empty lines before second level comments and one empty line after.
+- Three empty lines before second and third level comments and one empty line after each.
 - Use sentence case when writing comments.
 
-<br>
+Commenting formats:
 
     /* Comment level 1
        -------------------------------------------------- */
@@ -182,6 +181,7 @@ Comments
     .selector {
         property: value;
     }
+    
     
     
     /* But wait! There's more. Comment level 4 */
@@ -221,12 +221,12 @@ Order
 You should follow this five-group model for crafting your CSS.
 
 1. Base - includes your elements without classes
-`html {}`
-`a {}`
+`html {}`,
+`a {}`,
 `a:hover {}`
 
 2. Layout - includes elements that make up the structure of the page
-`.l-module {}`
+`.l-module {}`,
 `.l-content {}`
 
 3. Module - includes typical elements that contain the content
@@ -241,10 +241,14 @@ You should follow this five-group model for crafting your CSS.
 General declaration order:
 
     .btn {
+        /* Box model */
+        content: " »";
+        box-sizing: border-box;
+        
         width: auto;
-        height: auto;
         min-width: 0;
         max-width: none;
+        height: auto;
         min-height: 0;
         max-height: none;
 
@@ -253,6 +257,7 @@ General declaration order:
         border-radius: 0.15em;
         padding: 0.5em 1em;
 
+        /* List your positioning properties in TRBL (top, right, bottom, left) order. */
         position: relative;
         top: 0;
         right: auto;
@@ -261,6 +266,8 @@ General declaration order:
 
         display: inline-block;
         float: none;
+
+        opacity: 0.9;
 
         font-family: sans-serif;
         font-size: 1.5rem;
@@ -299,7 +306,7 @@ Exceptions
 Responsive Design
 -----------------
 
-- Write your media queries straight into your code and not all at the end of your CSS document.
+- Write your media queries right along with your code and not all at the end of your CSS document.
 - Build in a flexible way where you do not need to set widths.
 - Craft your layouts with `rem`s, `em`s, and percentage-based units for fluidity.
 
