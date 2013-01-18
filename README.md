@@ -124,6 +124,7 @@ Font-size / line-height
 -----------------------
 
 - You can set your base `font-size` in pixels but all additional `font-size`s should be set with `rem`s or `em`s.
+- Root ems make sense for setting your `font-size`s because they are proportionally based on the initial `font-size` of the root element.
 - Always set your `line-height` with a unitless number. (e.g. `line-height: 1.4;`)
 
 <br>
