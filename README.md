@@ -125,9 +125,9 @@ Font-size / line-height
 
 - You can set your base `font-size` in pixels but all additional `font-size`s should be set with `rem`s or `em`s.
 - Always set your `line-height` with a unitless number. (e.g. `line-height: 1.4;`)
- 
- <br>
- 
+
+<br>
+
     html {
         font: 16px/1.6 sans-serif;
     }
