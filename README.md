@@ -295,6 +295,7 @@ General declaration order:
         
         /* Other presentational properties */
         box-shadow: 0 0.1em 0.5em black;
+        transform: rotate(3deg);
         transition: color 1s ease-out;
         animation: flip 3s all;
     }
