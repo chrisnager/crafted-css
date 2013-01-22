@@ -15,9 +15,9 @@ Contents
 
 - [General](#general)
 - [Formatting](#formatting)
+- [Whitespace](#whitespace)
 - [Numbers](#numbers)
 - [URLs](#urls)
-- [Whitespace](#whitespace)
 - [Colors](#colors)
 - [Vendor prefixes](#vendor-prefixes)
 - [Font size / line height](#font-size--line-height)
@@ -35,7 +35,7 @@ General
 -------
 
 - Don't use IDs in CSS if at all possible. Stick to classes.
-- Do not be overly specific. (e.g. `.my-list > li` rather than `body .content .wrapper .my-list li`)
+- Do not be overly specific. (e.g. `.my-list > li` rather than `body .content div.wrapper .my-list li`)
 - Instead of targetting an element based on it's parents like this: `body .header .box a.btn`, `.btn` is much better.
 - Avoid over-qualified selectors when possible. (e.g. Use `.btn` instead of `a.btn`)
 - Make your code as future-proof and easily editable for the next developer that will be working on it.
@@ -53,6 +53,25 @@ Formatting
 - Use lowercase with dashes, not underscores or camelcase for class/ID names. (e.g. `.btn-large`, not `.btn_large` or `.btnLarge`)
 - Use double quotes. (`font-family: "Lucida Sans", sans-serif`)
 - Your closing brace should line up vertically with the first character in the ruleset.
+
+
+
+Whitespace
+----------
+
+- Properties should be indented four spaces.
+- Use soft tabs that span four spaces.
+- When indenting, do not mix tabs and spaces. Only use spaces. (I turn on Show Invisibles in my editor to check this.)
+- Always put a space between a selector and its opening curly brace.
+- Put a space after the colon between your property and value.
+- Never leave trailing white space. (I use a plugin that deletes trailing white space on each save.)
+- Use spaces between subvalues in values like hsla/rgba color values to improve readability. (e.g. `hsl(4, 100%, 43%)`)
+
+Example showing the proper use of whitespace:
+
+    .btn {
+        background-image: linear-gradient(to bottom, #0cf, rgba(255, 255, 255, 0.5));
+    }
 
 
 
@@ -76,24 +95,6 @@ Relative url example:
         background-image: url(//chrisnager.com/images/image.png);
     }
 
-
-
-Whitespace
-----------
-
-- Properties should be indented four spaces.
-- Use soft tabs that span four spaces.
-- When indenting, do not mix tabs and spaces. Only use spaces. (I turn on Show Invisibles in my editor to check this.)
-- Always put a space between a selector and its opening curly brace.
-- Put a space after the colon between your property and value.
-- Never leave trailing white space. (I use a plugin that deletes trailing white space on each save.)
-- Use spaces between subvalues in values like hsla/rgba color values to improve readability. (e.g. `hsl(4, 100%, 43%)`)
-
-Example showing the proper use of whitespace:
-
-    .btn {
-        background-image: linear-gradient(to bottom, #0cf, rgba(255, 255, 255, 0.5));
-    }
 
 
 Colors
@@ -176,6 +177,7 @@ Commenting formats:
     
     /* And...comment level 3
        ------------------------------ */
+    
     .selector {
         property: value;
     }
@@ -288,6 +290,11 @@ General declaration order:
         background-position: right center;
         background-repeat: no-repeat;
         background-size: contain;
+        
+        /* Other presentational properties */
+        box-shadow: 0 0.1em 0.5em black;
+        transition: color 1s ease-out;
+        animation: flip 3s all;
     }
 
 
