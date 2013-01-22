@@ -267,6 +267,7 @@ General declaration order:
         bottom: auto;
         left: 0;
 
+        /* Display properties */
         display: inline-block;
         float: none;
 
@@ -285,6 +286,7 @@ General declaration order:
         text-transform: uppercase;
         text-decoration: underline;
 
+        /* Colors and backgrounds */
         color: white;
 
         background-color: red;
