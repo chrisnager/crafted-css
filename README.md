@@ -272,6 +272,7 @@ General declaration order:
 
         opacity: 0.9;
 
+        /* Typographic styles */
         font-family: sans-serif;
         font-size: 1.5rem;
         font-weight: bold;
@@ -281,6 +282,7 @@ General declaration order:
         letter-spacing: -0.1em;
 
         text-align: center;
+        text-transform: uppercase;
         text-decoration: underline;
 
         color: white;
