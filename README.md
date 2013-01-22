@@ -343,6 +343,18 @@ OOCSS example:
 How BEM should be written:
 
     .block__element--modifier {}
+    
+    Block
+    .menu {}
+    
+    Block + Modifier
+    .menu--vertical {}
+    
+    Block + Element
+    .menu__menu-items {}
+    
+    Block + Element + Modifier
+    .menu__menu-items--rev {}
 
 
 
