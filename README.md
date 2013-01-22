@@ -329,9 +329,6 @@ OOCSS and BEM
 -------------
 
 - OOCSS is all about finding design patterns that can be abstrated into reusable components.
-- BEM is the only time underscores are cool to use. BEM takes OOCSS to another level that establishes logical class names and keeps specificity to a bare minimum.
-
-<br>
 
 OOCSS example:
 
@@ -339,6 +336,9 @@ OOCSS example:
     .btn--primary
     .btn--secondary
 
+
+
+- BEM is the only time underscores are cool to use. BEM takes OOCSS to another level that establishes logical class names and keeps specificity to a bare minimum.
 
 How BEM should be written:
 
@@ -355,6 +355,12 @@ How BEM should be written:
     
     Block + Element + Modifier
     .menu__menu-items--rev {}
+
+
+    .btn-large {
+        padding: 0 1em;
+        line-height: 3em;
+    }
 
 
 
