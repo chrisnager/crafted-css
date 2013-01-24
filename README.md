@@ -360,7 +360,7 @@ How BEM should be written:
 
 
 
-Real world example:
+Real world example of OOCSS in action using a BEM-style class structure:
 
     <a href="/" class="btn  btn--large  btn--positive">Submit</a>
 
