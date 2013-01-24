@@ -35,7 +35,7 @@ General
 -------
 
 - Don't use IDs in CSS if at all possible. Stick to classes.
-- Do not be overly specific. (e.g. `.my-list > li` rather than `body .content div.wrapper .my-list li`)
+- Do not be overly specific with your selectors. (e.g. `.my-list > li` rather than `body .content div.wrapper .my-list li`)
 - Instead of targetting an element based on it's parents like this: `body .header .box a.btn`, `.btn` is much better.
 - Avoid over-qualified selectors when possible. (e.g. Use `.btn` instead of `a.btn`)
 - Make your code as future-proof and easily editable for the next developer that will be working on it.
@@ -282,6 +282,8 @@ General declaration order:
         line-height: 1.5;
         letter-spacing: -0.1em;
 
+        white-space: nowrap;
+
         text-align: center;
         text-transform: uppercase;
         text-decoration: underline;
@@ -307,7 +309,7 @@ General declaration order:
 Exceptions
 ----------
 
-- Note the spacing.
+- Note the spacing inside the curly brackets.
 
         .grid-10 { width: 10%; }
         .grid-20 { width: 20%; }
@@ -357,11 +359,36 @@ How BEM should be written:
     .menu__menu-items--rev {}
 
 
-    .btn-large {
-        padding: 0 1em;
-        line-height: 3em;
-    }
 
+Real world example of OOCSS + BEM:
+
+    .btn {
+        border-radius: 0.1em;
+        padding: 0 0.75em;
+        display: inline-block;
+        line-height: 1.75em;
+        white-space: nowrap;
+        color: white;
+        background-color: gray;
+    }
+    
+    .btn--small {
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        line-height: 1.5em;
+    }
+    .btn--large {
+        padding-right: 1em;
+        padding-left: 1em;
+        line-height: 2em;
+    }
+    
+    .btn--positive {
+        background-color: green;
+    }
+    .btn--negative {
+        background-color: red;
+    }
 
 
 JavaScript
