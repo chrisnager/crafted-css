@@ -360,7 +360,9 @@ How BEM should be written:
 
 
 
-Real world example of OOCSS + BEM:
+Real world example:
+
+    <a href="/" class="btn  btn--large  btn--positive">Submit</a>
 
     .btn {
         border-radius: 0.1em;
