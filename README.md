@@ -112,6 +112,8 @@ Vendor prefixes
 - Order them from longest prefix name to shortest.
 - Always use the non-prefixed property last.
 
+<br>
+
         .btn {
             -webkit-transition: background-color 0.4s ease-in-out;
             -moz-transition: background-color 0.4s ease-in-out;
@@ -310,6 +312,8 @@ Exceptions
 ----------
 
 - Note the spacing inside the curly brackets.
+
+<br>
 
         .grid-10 { width: 10%; }
         .grid-20 { width: 20%; }
