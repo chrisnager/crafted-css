@@ -92,9 +92,11 @@ URLs
 
 Protocol-relative url example:
 
-    .example {
-        background-image: url(//chrisnager.com/images/image.png);
-    }
+```css
+.example {
+    background-image: url(//chrisnager.com/images/image.png);
+}
+```
 
 
 
@@ -113,14 +115,14 @@ Vendor prefixes
 - Order them from longest prefix name to shortest.
 - Always use the non-prefixed property last.
 
-<br>
-
-        .btn {
-            -webkit-transition: background-color 0.4s ease-in-out;
-            -moz-transition: background-color 0.4s ease-in-out;
-            -o-transition: background-color 0.4s ease-in-out;
-            transition: background-color 0.4s ease-in-out;
-        }
+```css
+.btn {
+    -webkit-transition: background-color 0.4s ease-in-out;
+    -moz-transition: background-color 0.4s ease-in-out;
+    -o-transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+}
+```
 
 
 
