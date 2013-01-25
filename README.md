@@ -356,53 +356,59 @@ OOCSS example:
 
 How BEM should be written:
 
-    .block__element--modifier {}
-    
-    Block
-    .menu {}
-    
-    Block + Modifier
-    .menu--vertical {}
-    
-    Block + Element
-    .menu__menu-items {}
-    
-    Block + Element + Modifier
-    .menu__menu-items--rev {}
+```css
+.block__element--modifier {}
+
+Block
+.menu {}
+
+Block + Modifier
+.menu--vertical {}
+
+Block + Element
+.menu__menu-items {}
+
+Block + Element + Modifier
+.menu__menu-items--rev {}
+```
 
 
 
 Real world example of OOCSS in action using a BEM-style class structure:
 
-    <a href="/" class="btn  btn--large  btn--positive">Submit</a>
+```html
+<a href="/" class="btn  btn--large  btn--positive">Submit</a>
+```
 
-    .btn {
-        border-radius: 0.1em;
-        padding: 0 0.75em;
-        display: inline-block;
-        line-height: 1.75em;
-        white-space: nowrap;
-        color: white;
-        background-color: gray;
-    }
-    
-    .btn--small {
-        padding-right: 0.5em;
-        padding-left: 0.5em;
-        line-height: 1.5em;
-    }
-    .btn--large {
-        padding-right: 1em;
-        padding-left: 1em;
-        line-height: 2em;
-    }
-    
-    .btn--positive {
-        background-color: green;
-    }
-    .btn--negative {
-        background-color: red;
-    }
+```css
+.btn {
+    border-radius: 0.1em;
+    padding: 0 0.75em;
+    display: inline-block;
+    line-height: 1.75em;
+    white-space: nowrap;
+    color: white;
+    background-color: gray;
+}
+
+.btn--small {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    line-height: 1.5em;
+}
+.btn--large {
+    padding-right: 1em;
+    padding-left: 1em;
+    line-height: 2em;
+}
+
+.btn--positive {
+    background-color: green;
+}
+.btn--negative {
+    background-color: red;
+}
+```
 
 
 JavaScript
