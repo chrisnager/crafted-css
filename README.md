@@ -1,4 +1,4 @@
-Crafted CSS
+Crafted CSS :cat2:
 ===========
 
 This is a personal compilation of CSS practices I follow.
