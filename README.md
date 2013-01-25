@@ -251,66 +251,66 @@ You should follow this five-group model for crafting your CSS.
 General declaration order:
 
 ```css
-    .btn {
-        /* Box model */
-        content: " »";
-        box-sizing: border-box;
-        
-        width: auto;
-        min-width: 0;
-        max-width: none;
-        height: auto;
-        min-height: 0;
-        max-height: none;
+.btn {
+    /* Box model */
+    content: " »";
+    box-sizing: border-box;
+    
+    width: auto;
+    min-width: 0;
+    max-width: none;
+    height: auto;
+    min-height: 0;
+    max-height: none;
 
-        margin: 0 auto;
-        border: 0;
-        border-radius: 0.15em;
-        padding: 0.5em 1em;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 0.15em;
+    padding: 0.5em 1em;
 
-        /* List your positioning properties in TRBL (top, right, bottom, left) order. */
-        position: relative;
-        top: 0;
-        right: auto;
-        bottom: auto;
-        left: 0;
+    /* List your positioning properties in TRBL (top, right, bottom, left) order. */
+    position: relative;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 0;
 
-        /* Display properties */
-        display: inline-block;
-        float: none;
+    /* Display properties */
+    display: inline-block;
+    float: none;
 
-        opacity: 0.9;
+    opacity: 0.9;
 
-        /* Typographic styles */
-        font-family: sans-serif;
-        font-size: 1.5rem;
-        font-weight: bold;
-        font-style: italic;
+    /* Typographic styles */
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
 
-        line-height: 1.5;
-        letter-spacing: -0.1em;
+    line-height: 1.5;
+    letter-spacing: -0.1em;
 
-        white-space: nowrap;
+    white-space: nowrap;
 
-        text-align: center;
-        text-transform: uppercase;
-        text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
 
-        /* Colors and backgrounds */
-        color: white;
+    /* Colors and backgrounds */
+    color: white;
 
-        background-color: red;
-        background-image: url(btn-bg.png);
-        background-position: right center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        
-        /* Other presentational properties */
-        box-shadow: 0 0.1em 0.5em black;
-        transform: rotate(3deg);
-        transition: color 1s ease-out;
-        animation: flip 3s all;
-    }
+    background-color: red;
+    background-image: url(btn-bg.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    /* Other presentational properties */
+    box-shadow: 0 0.1em 0.5em black;
+    transform: rotate(3deg);
+    transition: color 1s ease-out;
+    animation: flip 3s all;
+}
 ```
 
 
