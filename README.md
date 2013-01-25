@@ -87,9 +87,9 @@ URLs
 ----
 
 - Don't use quotes around `url`s.
-- Keep `url`s relative by not including `http:` or `https:`.
+- Use only protocol-relative `url`s by not including `http:` and `https:`.
 
-Relative url example:
+Protocol-relative url example:
 
     .example {
         background-image: url(//chrisnager.com/images/image.png);
