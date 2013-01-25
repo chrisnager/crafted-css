@@ -70,9 +70,9 @@ Whitespace
 Example showing the proper use of whitespace:
 
 ```css
-    .btn {
-        background-image: linear-gradient(to bottom, #0cf, rgba(255, 255, 255, 0.5));
-    }
+.btn {
+    background-image: linear-gradient(to bottom, #0cf, rgba(255, 255, 255, 0.5));
+}
 ```
 
 
