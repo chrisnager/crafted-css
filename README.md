@@ -133,15 +133,15 @@ Font-size / line-height
 - Root ems make sense for setting your `font-size`s because they are proportionally based on the initial `font-size` of the root element.
 - Always set your `line-height` with a unitless number. (e.g. `line-height: 1.4;`)
 
-<br>
-
-    html {
-        font: 16px/1.6 sans-serif;
-    }
-    h1 {
-        font-size: 40px; /* Fallback */
-        font-size: 2.5rem; /* This makes your h1 40px/64px. */
-    }
+```css
+html {
+    font: 16px/1.6 sans-serif;
+}
+h1 {
+    font-size: 40px; /* Fallback */
+    font-size: 2.5rem; /* This makes your h1 40px/64px. */
+}
+```
 
 
 
@@ -156,70 +156,72 @@ Comments
 
 Commenting formats:
 
-    /* Comment level 1
-       -------------------------------------------------- */
-    
-    .selector {
-        property: value;
-    }
-    
-    
-    
-    
-    
-    
-    /* Here's another level 1 comment
-       -------------------------------------------------- */
-    
-    /* Have you seen level 2 comments?
-       ---------------------------------------- */
-    
-    .selector {
-        property: value;
-    }
-    
-    
-    
-    /* And...comment level 3
-       ------------------------------ */
-    
-    .selector {
-        property: value;
-    }
-    .selector {
-        property: value;
-    }
-    
-    
-    
-    /* But wait! There's more. Comment level 4 */
-    .selector {
-        property: value;
-    }
-    .selector {
-        property: value;
-    }
-    
-    
-    
-    /* Level 2 comment
-       ---------------------------------------- */
-    
-    .selector {
-        property: value;
-    }
+```css
+/* Comment level 1
+   -------------------------------------------------- */
+
+.selector {
+    property: value;
+}
 
 
 
 
 
 
-    /* Another level 1 comment
-       -------------------------------------------------- */
-    
-    .selector {
-        property: value; /* A wild inline comment appeared! */
-    }
+/* Here's another level 1 comment
+   -------------------------------------------------- */
+
+/* Have you seen level 2 comments?
+   ---------------------------------------- */
+
+.selector {
+    property: value;
+}
+
+
+
+/* And...comment level 3
+   ------------------------------ */
+
+.selector {
+    property: value;
+}
+.selector {
+    property: value;
+}
+
+
+
+/* But wait! There's more. Comment level 4 */
+.selector {
+    property: value;
+}
+.selector {
+    property: value;
+}
+
+
+
+/* Level 2 comment
+   ---------------------------------------- */
+
+.selector {
+    property: value;
+}
+
+
+
+
+
+
+/* Another level 1 comment
+   -------------------------------------------------- */
+
+.selector {
+    property: value; /* A wild inline comment appeared! */
+}
+```
 
 
 
@@ -248,6 +250,7 @@ You should follow this five-group model for crafting your CSS.
 
 General declaration order:
 
+```css
     .btn {
         /* Box model */
         content: " »";
@@ -308,6 +311,7 @@ General declaration order:
         transition: color 1s ease-out;
         animation: flip 3s all;
     }
+```
 
 
 
@@ -316,12 +320,12 @@ Exceptions
 
 - Note the spacing inside the curly brackets.
 
-<br>
-
-        .grid-10 { width: 10%; }
-        .grid-20 { width: 20%; }
-        .grid-30 { width: 30%; }
-        .grid-40 { width: 40%; }
+```css
+.grid-10 { width: 10%; }
+.grid-20 { width: 20%; }
+.grid-30 { width: 30%; }
+.grid-40 { width: 40%; }
+```
 
 
 
@@ -341,10 +345,11 @@ OOCSS and BEM
 
 OOCSS example:
 
-    .btn
-    .btn--primary
-    .btn--secondary
-
+```css
+.btn
+.btn--primary
+.btn--secondary
+```
 
 
 - BEM is the only time underscores are cool to use. BEM takes OOCSS to another level that establishes logical class names and keeps specificity to a bare minimum.
