@@ -357,9 +357,9 @@ OOCSS and BEM
 OOCSS example:
 
 ```css
-.btn
-.btn--primary
-.btn--secondary
+.btn {}
+.btn--primary {}
+.btn--secondary {}
 ```
 
 
