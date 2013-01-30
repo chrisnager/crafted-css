@@ -320,11 +320,22 @@ Exceptions
 
 - Note the spacing inside the curly brackets.
 
+Take for example a large sprited image of national flags:
+
 ```css
-.grid-10 { width: 10%; }
-.grid-20 { width: 20%; }
-.grid-30 { width: 30%; }
-.grid-40 { width: 40%; }
+.icon--flag {
+    width: 15px;
+    height: 10px;
+    border: 1px solid gold;
+    display: inline-block;
+    background-image: url(//path.to/sprite.png);
+}
+.icon--flag-1 { background-position: 0 -10px; }
+.icon--flag-2 { background-position: 0 -20px; }
+.icon--flag-3 { background-position: 0 -30px; }
+.icon--flag-4 { background-position: 0 -40px; }
+.icon--flag-5 { background-position: 0 -50px; }
+.icon--flag-6 { background-position: 0 -60px; }
 ```
 
 
