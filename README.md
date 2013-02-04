@@ -264,9 +264,25 @@ General declaration order:
     max-height: none;
 
     margin: 0 auto;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
     border: 0;
+    border-top: 0;
+    border-top-width: 0;
+    border-right: 0;
+    border-right-width: 0;
+    border-bottom: 0;
+    border-bottom-width: 0;
+    border-left: 0;
+    border-left-width: 0;
     border-radius: 0.15em;
-    padding: 0.5em 1em;
+    padding: 0.5em 1em 0.55em;
+    padding-top: 0.5em;
+    padding-right: 1em;
+    padding-bottom: 0.55em;
+    padding-left: 1em;
 
     /* List your positioning properties in TRBL (top, right, bottom, left) order. */
     position: relative;
@@ -278,27 +294,51 @@ General declaration order:
     /* Display properties */
     display: inline-block;
     float: none;
+    clear: none;
+    z-index: 1;
+
+    list-style: katakana inside;
+    list-style-type: katakana;
+    list-style-image: url(list-disc.png);
+    list-style-position: inside;
 
     opacity: 0.9;
+    cursor: pointer;
+
+    /* Tables */
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 0.5em;
+    caption-side: top;
+    empty-cells: show;
+    speak-header: always;
 
     /* Typographic styles */
+    font: 1.5rem sans-serif;
     font-family: sans-serif;
+    font-variant: small-caps;
     font-size: 1.5rem;
+    font-size-adjust: none;
     font-weight: bold;
     font-style: italic;
+    font-stretch: normal;
 
     line-height: 1.5;
     letter-spacing: -0.1em;
 
     white-space: nowrap;
+    word-spacing: normal;
 
+    text-indent: 1em;
     text-align: center;
     text-transform: uppercase;
     text-decoration: underline;
+    text-shadow: 0.1em -0.1em rgba(0, 0, 0, 0.8);
 
     /* Colors and backgrounds */
     color: white;
 
+    background: none;
     background-color: red;
     background-image: url(btn-bg.png);
     background-position: right center;
