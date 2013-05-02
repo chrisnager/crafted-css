@@ -137,6 +137,7 @@ Font-size / line-height
 html {
     font: 16px/1.6 sans-serif;
 }
+
 h1 {
     font-size: 40px; /* Fallback */
     font-size: 2.5rem; /* This makes your h1 40px/64px. */
@@ -197,6 +198,7 @@ Commenting formats:
 .selector {
     property: value;
 }
+
 .selector {
     property: value;
 }
@@ -370,6 +372,7 @@ Take for example a large sprited image of national flags:
     display: inline-block;
     background-image: url(//path.to/sprite.png);
 }
+
 .icon--flag-1 { background-position: 0 -10px; }
 .icon--flag-2 { background-position: 0 -20px; }
 .icon--flag-3 { background-position: 0 -30px; }
@@ -442,16 +445,21 @@ Real world example of OOCSS in action using a BEM-style class structure:
     background-color: gray;
 }
 
+
+
 .btn--small {
     padding-right: 0.5em;
     padding-left: 0.5em;
     line-height: 1.5em;
 }
+
 .btn--large {
     padding-right: 1em;
     padding-left: 1em;
     line-height: 2em;
 }
+
+
 
 .btn--positive {
     background-color: green;
