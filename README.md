@@ -462,10 +462,11 @@ Real world example of OOCSS in action using a BEM-style class structure:
 
 
 .btn--positive {
-    background-color: green;
+    background-color: limegreen;
 }
+
 .btn--negative {
-    background-color: red;
+    background-color: orangered;
 }
 ```
 
