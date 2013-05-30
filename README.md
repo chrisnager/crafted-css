@@ -152,14 +152,15 @@ Comments
 - Comment often for future developers (and for future you).
 - First level comments should always be followed by an empty line.
 - Except for the first one on the page, first level comments should be preceded by six empty lines.
-- Three empty lines before second and third level comments and one empty line after each.
+- Three empty lines before second and third level comments.
 - Use sentence case when writing comments.
 
 Commenting formats:
 
 ```css
-/* Comment level 1
-   -------------------------------------------------- */
+/* ==========================================================================
+   Comment level 1
+   ========================================================================== */
 
 .selector {
     property: value;
@@ -170,12 +171,12 @@ Commenting formats:
 
 
 
-/* Here's another level 1 comment
-   -------------------------------------------------- */
+/* ==========================================================================
+   Here's another level 1 comment
+   ========================================================================== */
 
 /* Have you seen level 2 comments?
-   ---------------------------------------- */
-
+   -------------------------------------------------------------------------- */
 .selector {
     property: value;
 }
@@ -183,8 +184,8 @@ Commenting formats:
 
 
 /* And...comment level 3
-   ------------------------------ */
-
+   ------------------------------------------------------ */
+   
 .selector {
     property: value;
 }
@@ -206,8 +207,7 @@ Commenting formats:
 
 
 /* Level 2 comment
-   ---------------------------------------- */
-
+   -------------------------------------------------------------------------- */
 .selector {
     property: value;
 }
@@ -217,8 +217,9 @@ Commenting formats:
 
 
 
-/* Another level 1 comment
-   -------------------------------------------------- */
+/* ==========================================================================
+   Another level 1 comment
+   ========================================================================== */
 
 .selector {
     property: value; /* A wild inline comment appeared! */
