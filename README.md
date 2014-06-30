@@ -103,7 +103,7 @@ Protocol-relative url example:
 Colors
 ------
 
-- Color names (`red`) and shorthand hexcodes (`#eee`) are preffered. Regular hexcodes, `hsla`, and `rgba` should be used for additional color control.
+- [Short color names](//github.com/chrisnager/short-color-names) (`red`) and shorthand hexcodes (`#eee`) are preferred. Regular hexcodes, `hsla`, and `rgba` should be used for additional color control.
 - Only use lowercase when dealing with colors. (e.g. `cadetblue`, `#dabb1e`, `#b2b`)
 
 
@@ -463,11 +463,11 @@ Real world example of OOCSS in action using a BEM-style class structure:
 
 
 .btn--positive {
-    background-color: limegreen;
+    background-color: lime;
 }
 
 .btn--negative {
-    background-color: orangered;
+    background-color: tomato;
 }
 ```
 
