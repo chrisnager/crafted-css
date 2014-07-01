@@ -339,7 +339,7 @@ General declaration order:
     text-shadow: 0.1em -0.1em rgba(0, 0, 0, 0.8);
 
     /* Colors and backgrounds */
-    color: white;
+    color: #222;
 
     background: none;
     background-color: red;
@@ -349,7 +349,7 @@ General declaration order:
     background-size: contain;
     
     /* Other presentational properties */
-    box-shadow: 0 0.1em 0.5em black;
+    box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.25);
     transform: rotate(3deg);
     transition: color 1s ease-out;
     animation: flip 3s all;
@@ -442,7 +442,7 @@ Real world example of OOCSS in action using a BEM-style class structure:
     display: inline-block;
     line-height: 1.75em;
     white-space: nowrap;
-    color: white;
+    color: #fff;
     background-color: gray;
 }
 
